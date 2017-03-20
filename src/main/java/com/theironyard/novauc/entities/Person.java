@@ -8,11 +8,12 @@ import javax.persistence.*;
 @Entity
 @Table(name = "people")
 public class Person {
+
     @Id
     @GeneratedValue
     int id;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     String name;
 
     @Column(nullable = false)
@@ -26,6 +27,17 @@ public class Person {
 
     @Column(nullable = false)
     String email;
+
+    public Person() {
+    }
+
+    public Person(String name, String address, String phone, String birthDay, String email) {
+        this.name = name;
+        this.address = address;
+        this.phone = phone;
+        this.birthDay = birthDay;
+        this.email = email;
+    }
 
     public int getId() {
         return id;
@@ -75,6 +87,12 @@ public class Person {
         this.email = email;
     }
 
-    public Person() {
-    }
+
+
+
+
+
+
 }
+
+
