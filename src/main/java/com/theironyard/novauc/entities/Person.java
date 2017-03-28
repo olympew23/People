@@ -1,5 +1,7 @@
 package com.theironyard.novauc.entities;
 
+import io.swagger.annotations.Api;
+
 import javax.persistence.*;
 
 /**
@@ -7,6 +9,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "people")
+
 public class Person {
 
     @Id

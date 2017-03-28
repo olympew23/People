@@ -5,6 +5,7 @@ import com.theironyard.novauc.entities.PeopleFile;
 import com.theironyard.novauc.entities.Person;
 import com.theironyard.novauc.services.PeopleFileRepository;
 import com.theironyard.novauc.services.PersonRepository;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -20,6 +21,7 @@ import java.util.List;
  * Created by jerieshasmith on 3/18/17.
  */
 @RestController
+@RequestMapping("/people")
 public class PeopleController {
 
     @Autowired
